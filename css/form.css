@@ -1,0 +1,29 @@
+.form {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    gap: 10px;
+}
+
+@media (max-width: 780px) {
+    .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+        align-items: stretch;
+        flex-wrap: wrap;
+    }
+}
+
+.form__input {
+    padding: 5px;
+    border: 2px solid #ddd;
+    float: left;
+}
+
+.form__button {
+    border: none;
+    background-color: teal;
+    color: white;
+    padding: 10px;
+}

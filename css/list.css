@@ -1,3 +1,34 @@
 .list__text--done {
     text-decoration: line-through;
 }
+
+.list {
+    list-style: none;
+    padding: 10px;
+}
+
+.list__button--done {
+    border: none;
+    background-color: green;
+    height: 30px;
+    width: 30px;
+    color: white;
+}
+
+.list__button--remove {
+    border: none;
+    color: white;
+    height: 30px;
+    width: 30px;
+    background-color: red;
+}
+
+.list__items {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 0fr 2fr 0fr;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 2px solid #eee;
+    word-break: break-word;
+}

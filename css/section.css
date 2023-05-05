@@ -1,0 +1,19 @@
+.section {
+    background-color: white;
+    margin: 10px 0;
+}
+
+.section__header {
+    background-color: white;
+    border-bottom: 2px solid #eee;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.section__title {
+    padding: 5px;
+    margin: 0;
+}
