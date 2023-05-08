@@ -4,7 +4,7 @@
 
 .list {
     list-style: none;
-    padding: 10px;
+    padding: 20px;
 }
 
 .list__button--done {
@@ -24,9 +24,9 @@
 }
 
 .list__items {
-    padding: 10px;
+    padding: 10px 20px;
     display: grid;
-    grid-template-columns: 0fr 2fr 0fr;
+    grid-template-columns: auto 1fr auto;
     align-items: center;
     gap: 10px;
     border-bottom: 2px solid #eee;

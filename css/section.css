@@ -16,4 +16,6 @@
 .section__title {
     padding: 5px;
     margin: 0;
+    font-weight: bold;
+    font-size: 1.4em;
 }
