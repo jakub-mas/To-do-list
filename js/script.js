@@ -54,11 +54,14 @@
 
     const renderButtons = () => {};
 
+    const bindButtonsEvents = () => {};
+
     const render = () => {
         renderTasks();
         renderButtons();
 
         bindEvents();
+        bindButtonsEvents();
     };
 
     const onFormSubmit = (event) => {
