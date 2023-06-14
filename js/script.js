@@ -37,7 +37,7 @@
         });
     }
 
-    const render = () => {
+    const renderTasks = () => {
         let htmlString = ""
 
         for (const task of tasks)
@@ -50,6 +50,13 @@
         `;
 
         document.querySelector(".js-list").innerHTML = htmlString;
+    };
+
+    const renderButtons = () => {};
+
+    const render = () => {
+        renderTasks();
+        renderButtons();
 
         bindEvents();
     };
