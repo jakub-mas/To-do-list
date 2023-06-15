@@ -42,3 +42,8 @@
     background-color: hsl(180, 100%, 55%);
     padding: 10px;
 }
+
+.list__items.hidden {
+    display: none;
+  }
+  
