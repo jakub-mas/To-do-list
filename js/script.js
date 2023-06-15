@@ -20,7 +20,6 @@
         render();
     };
 
-
     const toggleTaskDone = (taskIndex) => {
         tasks = tasks.map((task, index) => {
             if (index === taskIndex) {
@@ -91,8 +90,6 @@
         document.querySelector(".js-list").innerHTML = htmlString;
     };
 
-
-
     const renderButtons = () => {
         const sectionHeader = document.querySelector(".js-header");
         sectionHeader.innerHTML = "";
@@ -109,11 +106,6 @@
 
         sectionHeader.innerHTML = buttonsHtml;
     };
-
-
-
-
-
 
     const bindButtonsEvents = () => {
         const toggleHideDoneTasksButton = document.querySelector(".js-toggleHideDoneTasks");
