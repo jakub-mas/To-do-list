@@ -93,19 +93,26 @@
     const renderButtons = () => {
         const sectionHeader = document.querySelector(".js-header");
         sectionHeader.innerHTML = "";
-
+      
         let buttonsHtml = `
-          <div>
             <h2 class="section__title">Lista zadań</h2>
-          </div>
-          <div class="section__buttons">
-            ${tasks.length > 0 ? `<button class="button js-toggleHideDoneTasks">${hideDoneTasks ? "Pokaż ukończone" : "Ukryj ukończone"}</button>` : ""}
-            ${tasks.length > 0 ? `<button class="button js-toggleAllTasksDone">Zmień wszystkie</button>` : ""}
-          </div>
         `;
-
+      
+        if (tasks.length > 0) {
+          buttonsHtml += `
+            <button class="button js-toggleHideDoneTasks section__buttons">
+              ${hideDoneTasks ? "Pokaż ukończone" : "Ukryj ukończone"}
+            </button>
+            <button class="button js-toggleAllTasksDone section__buttons">Zmień wszystkie</button>
+          `;
+        }
+      
+        buttonsHtml += `
+        `;
+      
         sectionHeader.innerHTML = buttonsHtml;
-    };
+      };
+      
 
     const bindButtonsEvents = () => {
         const toggleHideDoneTasksButton = document.querySelector(".js-toggleHideDoneTasks");
