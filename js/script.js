@@ -92,7 +92,6 @@
 
     const renderButtons = () => {
         const sectionHeader = document.querySelector(".js-header");
-        sectionHeader.innerHTML = "";
       
         let buttonsHtml = `
             <h2 class="section__title">Lista zadań</h2>
@@ -100,10 +99,10 @@
       
         if (tasks.length > 0) {
           buttonsHtml += `
-            <button class="button js-toggleHideDoneTasks section__buttons">
+            <button class="js-toggleHideDoneTasks section__buttons">
               ${hideDoneTasks ? "Pokaż ukończone" : "Ukryj ukończone"}
             </button>
-            <button class="button js-toggleAllTasksDone section__buttons">Zmień wszystkie</button>
+            <button class="js-toggleAllTasksDone section__buttons">Ukończ wszystkie</button>
           `;
         }
       
