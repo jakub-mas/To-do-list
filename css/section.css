@@ -36,6 +36,10 @@
     color: hsl(180, 100%, 45%);
 }
 
+.section__buttons:disabled {
+    color: hsl(0, 0%, 70%);
+}
+
 @media (max-width: 780px) {
     .section__header {
         grid-template-columns: 1fr;
