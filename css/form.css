@@ -27,13 +27,15 @@
     background-color: teal;
     color: white;
     padding: 10px;
-}
+    transition: transform 0.2s;
+  }
 
 .form__button:hover {
     cursor: pointer;
     color: white;
     background-color: hsl(180, 100%, 40%);
     padding: 10px;
+    transform: scale(1.1) ;
 }
 
 .form__button:active {
@@ -41,6 +43,7 @@
     color: white;
     background-color: hsl(180, 100%, 55%);
     padding: 10px;
+    transform: scale(0.9);
 }
 
 .list__items.hidden {
